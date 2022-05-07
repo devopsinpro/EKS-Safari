@@ -69,7 +69,7 @@ You may wish to look at the [./iam.tf](./iam.tf) file where all of these resourc
 
 ## Sign in
 
-Get the User Password for Console Sign in 
+Get the User Password for Console Sign in ; pbcopy is the command to coty password to the clipboard withoutshowing it to the terminal screen. 
 
 ```
 terraform output password | base64 --decode  | gpg --decrypt | pbcopy
